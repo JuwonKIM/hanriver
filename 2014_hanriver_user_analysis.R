@@ -182,9 +182,15 @@ for (y.name in y.names) {
   p <- ggplot(h, aes_string(x='area', y=y.name)) +
     geom_boxplot() +
     theme_bw() +
-    ggtitle(paste('Box plot for', y.names))
+    ggtitle(paste('Box plot for', y.name))
   ggsave(p, filename=paste0('hanriver_boxplot_', y.name, '.png'))
 }
 # Y축 항목만 바꾸고 여러개의 그림을 한번에 그리기
 # 상기와 같은 과정을 수행하기 위해서는 데이터 테이블구조가 중요하며 각 속성을 열로 구분하는 것이 좋음
 # ttukseom 데이터 구조는 바람직하지 않음
+
+
+
+
+
+  
